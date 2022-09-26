@@ -1,0 +1,267 @@
+:root {
+  --hover-color: rgb(107, 168, 50);
+  --esblock-button-width: 330px;
+  --esblock-border-radius: 12px;
+  --question-colour: #222;
+  --solution-colour: #555;
+  --ppblock-button-width: 200px;
+  --ppblock-button-lineheight:55px;
+  --invalid-colour: rgb(116, 0, 0);
+}
+
+html {
+  font-size: 20px; /* px means "pixels": the base font size is now 10 pixels high  */
+  font-family: 'Lora', serif; /* this should be the rest of the output you got from Google fonts */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1{
+  margin: 10px;
+}
+
+h2{
+  margin: 15px;
+}
+
+.container{
+  padding: 1rem;
+  text-align: center;
+}
+
+.homeContainer div{
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.site-title {
+  font-size: 2rem;
+}
+
+
+/* Navbar styles============================================*/
+.nav {
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 1rem;
+  padding: 0rem;
+  height: 3.5rem;
+}
+
+.nav ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+}
+
+.nav a {
+  color: inherit;
+  text-decoration: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+.nav li.active{
+  background-color: #555;
+}
+
+.nav li:hover{
+  background-color: var(--hover-color);
+}
+
+/* esBlock design ===================================================*/
+.esBlock {
+  display: grid;
+  grid-template-columns: auto;
+  /*border: 1px solid red; */
+}
+
+
+/* examples buttom styles =====================================================*/
+
+.examples {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 0rem;
+  /* border: 1px solid red; */
+  width: 100%;
+}
+
+.examples a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  background-color: var(--question-colour);
+  width: var(--esblock-button-width);
+  text-align: center;
+  line-height: 60px;
+  margin: 0 0 15px;
+  border-radius: var(--esblock-border-radius)
+}
+
+.examples a:hover{
+  background-color: var(--hover-color);
+}
+
+/* esanswers buttom styles =====================================================*/
+
+.esanswers {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 0rem;
+  /* border: 1px solid red; */
+  width: 100%;
+}
+
+.esanswers a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  background-color: var(--solution-colour);
+  width: var(--esblock-button-width);
+  text-align: center;
+  line-height: 60px;
+  border-radius: 12px
+}
+
+.esanswers a:hover{
+  background-color: var(--hover-color);
+}
+
+/* Singleexample buttom styles =====================================================*/
+
+.Singleexample {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 0rem;
+  /* border: 1px solid red; */
+  width: 100%;
+}
+
+.Singleexample a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  background-color: var(--question-colour);
+  width: 695px;
+  text-align: center;
+  line-height: 60px;
+  margin: 0 0 15px;
+  border-radius: 12px
+}
+
+.Singleexample a:hover{
+  background-color: var(--hover-color);
+}
+
+.space{
+  height: 40px;
+}
+
+/* esOneAnswer buttom styles =====================================================*/
+
+.esOneAnswer {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 0rem;
+  /* border: 1px solid red; */
+  width: 100%;
+}
+
+.esOneAnswer a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  background-color: var(--solution-colour);
+  width: 695px;
+  text-align: center;
+  line-height: 60px;
+  border-radius: 12px
+}
+
+.esOneAnswer a:hover{
+  background-color: var(--hover-color);
+}
+
+.space{
+  height: 40px;
+}
+
+/* pp styles ===================================================*/
+.ppBlock {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 380px;
+  gap: 30px;
+}
+
+.ppArea{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 10px;
+}
+
+.solArea{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 10px;
+
+}
+
+.ppArea a{
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  background-color: var(--question-colour);
+  border-radius: 8px;
+  text-align: center;
+  line-height: var(--ppblock-button-lineheight);
+}
+
+.solArea a{
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  background-color: var(--solution-colour);
+  border-radius: 8px;
+  text-align: center;
+  line-height: var(--ppblock-button-lineheight);
+}
+
+.ppArea a:hover{
+  background-color: var(--hover-color);
+}
+
+.solArea a:hover{
+  background-color: var(--hover-color);
+}
+
+.solArea .invalid{
+  background-color: var(--invalid-colour);
+}
+
+.solArea .invalid:hover{
+  background-color: var(--invalid-colour);
+}
