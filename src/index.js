@@ -8,7 +8,7 @@ import {BrowserRouter} from "react-router-dom"
 import TagManager from 'react-gtm-module'
 
 const tagManagerArgs = {
-    gtmId: 'GTM-XXXXXX'
+    gtmId: 'GTM-K6MZXS2'
 }
 
 TagManager.initialize(tagManagerArgs)
