@@ -40,10 +40,6 @@ h2{
   text-align: center;
 }
 
-.site-title {
-  font-size: 2rem;
-}
-
 
 /* Navbar styles============================================*/
 .nav {
@@ -81,6 +77,16 @@ h2{
   background-color: var(--hover-color);
 }
 
+.nav img{
+  padding: 20px;
+  padding-left: 0px;
+  padding-bottom: 15px;
+}
+
+a.site-title {
+  font-size: 2rem;
+  padding-right: 10px;
+}
 /* esBlock design ===================================================*/
 .esBlock {
   display: grid;
